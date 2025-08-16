@@ -1,0 +1,29 @@
+:root {
+	--bg: #0b1020;
+	--panel: #121a2b;
+	--muted: #94a3b8;
+	--text: #e5ecff;
+	--primary: #4f46e5;
+	--primary-600: #4338ca;
+	--success: #16a34a;
+	--danger: #dc2626;
+	--card: #0f1526;
+	--border: #1f2a44;
+}
+
+html, body, #root { height: 100%; margin: 0; background: linear-gradient(180deg, #0a0f1f 0%, #0f162c 100%); color: var(--text); }
+* { box-sizing: border-box; }
+
+.container { margin: 0 auto; max-width: 1100px; padding: 20px; }
+
+.card { background: radial-gradient(1200px 400px at 10% -10%, rgba(79,70,229,.15), transparent 40%), var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 16px; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+
+.btn { border: 1px solid var(--border); border-radius: 10px; background: var(--primary); color: white; padding: 10px 14px; cursor: pointer; transition: transform .1s ease, background .2s ease; }
+.btn:hover { background: var(--primary-600); transform: translateY(-1px); }
+.btn.secondary { background: transparent; color: var(--text); }
+
+input, select { background: var(--card); color: var(--text); border: 1px solid var(--border); border-radius: 10px; padding: 10px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border-bottom: 1px solid var(--border); padding: 10px; }
+.amount-expense { color: var(--danger); }
+.amount-income { color: var(--success); }
